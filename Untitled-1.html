@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>BOMBARDILO COCODRILO</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>BOMBARDILO COCODRILO</h1>
+  <img src="c:\Users\erosb\Downloads\bombardino crocodilo.jpg" alt="c:\Users\erosb\Downloads\bombadiro-crocodilo.mp3">
+  <button onclick="reproducirAudio()">Reproducir Audio</button>
+  <audio id="miAudio">
+    <source src="c:\Users\erosb\Downloads\bombadiro-crocodilo.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+
+  <script>
+    function reproducirAudio() {
+      var audio = document.getElementById('miAudio');
+      audio.play();
+    }
+  </script>
+</body>
+</html>
